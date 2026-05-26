@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Convergence Archive</title>
+  <meta
+    name="description"
+    content="A cinematic interactive archive exploring the intersection of memory, emotion, and human connection."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-locked">
+  <div class="page-glow" aria-hidden="true"></div>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Toggle ambient audio">
+    <span class="music-toggle__label">Ambient Audio</span>
+    <span class="music-toggle__state">Off</span>
+  </button>
+
+  <section class="stage stage--landing is-active" id="landing-stage" aria-labelledby="archive-title">
+    <div class="decor-cluster decor-cluster--landing" aria-hidden="true">
+      <div class="flower flower--a"><span></span><span></span><span></span><span></span></div>
+      <div class="flower flower--b"><span></span><span></span><span></span><span></span></div>
+      <div class="flower flower--c"><span></span><span></span><span></span><span></span></div>
+    </div>
+ 
+    <div class="landing">
+      <div class="landing__inner">
+        <h1 class="landing__title" id="archive-title">
+          <span class="landing__title-line landing__title-line--the">The</span>
+          <span class="landing__title-line landing__title-line--convergence">Convergence</span>
+          <span class="landing__title-line landing__title-line--archive">Archive</span>
+        </h1>
+
+        <div class="landing__meta">
+          <div class="landing__divider" aria-hidden="true"></div>
+          <p class="landing__subtitle">
+            A digital study exploring the intersection of memory, emotion, and human connection.
+          </p>
+          <button class="primary-button landing__button" id="start-button" type="button">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage stage--reveal" id="reveal-stage" aria-labelledby="reveal-heading">
+    <div class="decor-cluster decor-cluster--reveal" aria-hidden="true">
+      <div class="flower flower--d"><span></span><span></span><span></span><span></span></div>
+      <div class="flower flower--e"><span></span><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="typewriter-panel">
+      <p class="typewriter-panel__eyebrow">Unsealed statement</p>
+      <h2 class="sr-only" id="reveal-heading">Hidden message reveal</h2>
+      <p class="typewriter__text" id="typewriter-text" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
